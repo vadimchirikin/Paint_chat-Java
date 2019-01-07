@@ -1,0 +1,30 @@
+-- phpMyAdmin SQL Dump
+-- version 2.8.2.4
+-- http://www.phpmyadmin.net
+-- 
+-- Хост: localhost
+-- Версия сервера: 5.0.24
+-- Версия PHP: 5.1.6
+-- 
+-- БД: `paint`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Структура таблицы `users`
+-- 
+
+CREATE TABLE `users` (
+  `user_id` tinyint(4) NOT NULL auto_increment,
+  `login` text collate cp1251_bin NOT NULL,
+  `passwd` text collate cp1251_bin NOT NULL,
+  PRIMARY KEY  (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=cp1251 COLLATE=cp1251_bin AUTO_INCREMENT=5 ;
+
+-- 
+-- Дамп данных таблицы `users`
+-- 
+
+INSERT INTO `users` VALUES (1, 0x313131, 0x313131);
+INSERT INTO `users` VALUES (2, 0x323232, 0x323232);
